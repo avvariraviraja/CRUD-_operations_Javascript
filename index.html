@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center><h1>PRODUCTS HOMEPAGE | DETAILS</h1></center>
+    <title>
+        Product List
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off"style="background-color:transparent">
+                    <div>
+                        <b><label>Name of Product</label></b><label class="validation-error hide" id="proNameValidationError">This field is required.</label>
+                        <input type="text" name="proName" id="proName">
+                    </div>
+                    <div>
+                        <b><label>Type of Product</label></b>
+                        <input type="text" name="proType" id="proType">
+                    </div>
+                    <div>
+                        <b><label>Price</label></b>
+                        <input type="number" name="price" id="price" placeholder="₹ 0.0">
+                    </div>
+                    <div>
+                        <b><label>Description</label></b>
+                        <input type="text" name="desc" id="desc">
+                    </div>
+					<div>
+                        <b><label>Fssai No.</label></b>
+                        <input type="number" name="fssai" id="fssai">
+                    </div>
+					<div>
+                        <b><label>M.F.D</label>
+                    </div>
+						<input type="date" name="mfd" id="mfd">
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+						<input type="button" onclick="window.open('login.html');" value="Go Back">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="productList">
+                    <thead>
+                        <tr>
+                            <th>Name of Product</th>
+                            <th>Type of Product</th>
+                            <th>Price</th>
+                            <th>Description</th>
+							<th>Fssai No.</th>
+							<th>M.F.D</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
